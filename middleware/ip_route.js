@@ -14,7 +14,7 @@ export default function ({ req, res, store, redirect, env }) {
     //var ip = "111.92.162.4" //id
 
     //从IP中解析地区信息
-    var city = new ipdb.City('/Users/Shannon/Downloads/ipipfreedb/ipipfree.ipdb')
+    var city = new ipdb.City(process.cwd() + '/ipipfree.ipdb')
     var cityInfo = city.findInfo(ip, "CN")
     console.log(cityInfo)
 

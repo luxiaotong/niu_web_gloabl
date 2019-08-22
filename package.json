@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "BASE_URL=http://web.niu.com nuxt build",
-    "start": "BASE_URL=http://web.niu.com nuxt start",
+    "build": "BASE_URL=http://niuweb.tk nuxt build",
+    "start": "BASE_URL=http://niuweb.tk nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
