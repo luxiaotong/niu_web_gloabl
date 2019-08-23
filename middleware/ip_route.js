@@ -14,7 +14,7 @@ export default function ({ req, res, store, redirect, env }) {
     //var ip = "88.159.13.198" //nl
     //var ip = "111.92.162.4" //id
 
-    var ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.ip
+    var ip = req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress
     console.log(ip);
 
     //从IP中解析地区信息

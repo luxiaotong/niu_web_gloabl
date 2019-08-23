@@ -8,6 +8,7 @@
     "dev": "nuxt",
     "build": "BASE_URL=http://niuweb.space nuxt build",
     "start": "BASE_URL=http://niuweb.space nuxt start",
+    "prod": "BASE_URL=http://niuweb.space nuxt build && BASE_URL=http://niuweb.space nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
