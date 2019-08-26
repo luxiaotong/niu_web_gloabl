@@ -6,18 +6,18 @@ Vue.use(Vuex)
 const store = () =>
   new Vuex.Store({
     state: {
-      cityInfo: null,
       ip: null,
+      region: null,
       country: null,
     },
 
     mutations: {
       // 更新store状态
-      SET_CITY: function(state, cityInfo) {
-        state.cityInfo = cityInfo
-      },
       SET_IP: function(state, ip) {
         state.ip = ip
+      },
+      SET_REGION: function(state, region) {
+        state.region = region
       },
       SET_COUNTRY: function(state, country) {
         state.country = country
