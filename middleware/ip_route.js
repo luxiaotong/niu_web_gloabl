@@ -33,9 +33,9 @@ export default function ({ req, res, store, redirect, env }) {
         country = cookie['country']
     } else {
         // 如果Cookie为空，使用IP解析地区作为指定地区
-        var regionName = cityInfo["regionName"]
-        if ( countryMap[regionName] ) {
-            country = countryMap[regionName]
+        var countryName = cityInfo["countryName"]
+        if ( countryMap[countryName] ) {
+            country = countryMap[countryName]
         }
         //res.setHeader('Cookie', ['country=' + country])
     }
@@ -43,7 +43,7 @@ export default function ({ req, res, store, redirect, env }) {
 
     //保存数据，用于前端展示
     store.commit("SET_IP", ip)
-    store.commit("SET_REGION", cityInfo['regionName'])
+    store.commit("SET_REGION", cityInfo['countryName'])
     store.commit("SET_COUNTRY", country)
 
 
