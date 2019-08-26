@@ -1,6 +1,5 @@
 var ipdb = require('../node_modules/ipip-ipdb/index')
 var cookieParser = require('cookie')
-var country = 'en'
 var countryMap = {
     '中国': 'cn',
     '本机地址': 'cn',
@@ -12,6 +11,7 @@ var countryMap = {
 }
 
 export default function ({ req, res, store, redirect, env }) {
+    var country = 'en'
     //var ip = req.connection.remoteAddress || req.socket.remoteAddress
     //console.log(ip);
     //var ip = "88.159.13.198" //nl
