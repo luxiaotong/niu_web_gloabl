@@ -42,8 +42,8 @@ export default function ({ req, res, store, redirect, env }) {
     console.log('country:' + country)
 
     //保存数据，用于前端展示
-    store.commit("SET_REGION", cityInfo['regionName'])
     store.commit("SET_IP", ip)
+    store.commit("SET_REGION", cityInfo['regionName'])
     store.commit("SET_COUNTRY", country)
 
 
