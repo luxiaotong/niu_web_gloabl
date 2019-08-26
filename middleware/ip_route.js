@@ -6,6 +6,9 @@ var countryMap = {
     '本机地址': 'cn',
     '荷兰': 'nl',
     '美国': 'en',
+    '法国': 'fr',
+    '德国': 'de',
+    '日本': 'jp',
 }
 
 export default function ({ req, res, store, redirect, env }) {
